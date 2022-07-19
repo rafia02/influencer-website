@@ -1,0 +1,297 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+
+/* universal style */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 25px;
+    border-radius: 41px;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.button .fa-arrow-right{
+    margin-left: 10px;
+}
+
+
+/* header style */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 70px;
+    margin-bottom: 80px;
+}
+
+.website-title{
+    font-size: 24px;
+}
+
+nav{
+    width: 463px;
+    height: 36px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+/* start influencer journey style */
+
+main{
+    margin: 0 70px;
+}
+.start-influencer-journey{
+    display: flex;
+    gap: 70px;
+    margin-bottom: 70px;
+}
+
+.influencer-title{
+ margin-top: 130px;
+    
+}
+
+.influencer-title h1{
+    font-weight: 700;
+    font-size: 28px;
+   }
+
+
+.influencer-title p{
+    margin: 19px 0;
+}
+
+
+.start-influencer-journey .influencer-img img{
+    width: 440px;
+    height: 414px;
+    padding: 20px;
+    border-radius: 50%;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* logo style */
+
+.website-logo{
+    border: 1px solid rgb(239, 238, 238);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+
+/* box style */
+
+.box-container{
+    margin-bottom: 100px;
+}
+.box-container h2{
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.box{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    justify-content: center;;
+    padding: 17px 15px;
+}
+
+
+
+.box .box-img img{
+    width: 100%;
+}
+
+.box-title h3{
+    font-size: 28px;
+    margin: 16px 0;
+}
+
+.box-title p{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.rating{
+    margin-top: 8px;
+}
+
+.rating .fa-star, .fa-star-half-stroke{
+    color: #FB8200;
+}
+
+.rating span{
+    margin-left: 8px ;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.info{
+    height: 61px;
+    width: 190px;
+}
+
+.box-title .info p{
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.product{
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.product-img{
+    width: 50%;
+}
+
+.product-title{
+    width: 50%;
+    margin-top: 30px;
+}
+
+.product-title h1{
+    font-weight: 700;
+    font-size: 30px;
+}
+.product-title p{
+    margin: 20px 0;
+}
+
+
+footer{
+    background-color: black;
+    padding: 30px;
+
+}
+
+.footer-description{
+    color: #FFFFFF;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.footer-description p{
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer-description h1{
+    font-weight: 700;
+    font-size: 29px;
+}
+
+.social-link{
+    margin-top: 10px;
+}
+
+.social-link a{
+    font-size: 19px;
+    color: #FFFFFF;
+    margin: 0 25px;
+
+}
+
+
+
+
+
+/* responsive */
+
+@media screen and (max-width: 688px) {
+
+    header{
+        margin: 20px 20px;
+    }
+    
+
+    main{
+        margin: 0 20px;
+    }
+
+    .start-influencer-journey{
+        display: flex;
+        flex-direction: column-reverse;  
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .start-influencer-journey .influencer-img img{
+        width: 240px;
+        height: 240px;
+        flex-direction: column-reverse;
+
+    }
+
+    .influencer-title{
+        margin-top: 0px;
+        width: 100%;
+           
+       }
+
+       .website-logo{
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 10px;
+    }
+
+
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .product{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .product-title{
+        width: 100%;
+        margin-bottom: 100px;
+
+    }
+
+    
+}
+
